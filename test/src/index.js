@@ -8,6 +8,7 @@ const name = {
   lastName: '中島'
 };
 
+const someHtml = {__html: '<h2>これはh2タグです。</h2>'};
 let count = 0;
 for (let i = 0; i < 12; i++) {
   count ++;
@@ -20,11 +21,12 @@ function Hello() {
        こんにちは { name.lastName + name.firstName} さん　{ count + 1 } 回目の訪問です
         </h1>
       <p id="hello">
-      {/*
-        Helloコンポーネントが書き出されました！*/}
+   Helloコンポーネントが書き出されました！
+   <br />
+   <span dangerouslySetInnerHTML={ someHtml } />
       </p>
 
-      <div style={{'margin-top': '100px', 'padding': '50px'}}>
+      <div data-role="imageBox">
       <img src="https://goo.gl/0kZocc" alt="Google" /></div>
     </section>
   );
