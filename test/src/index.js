@@ -20,7 +20,8 @@ function Hello() {
        こんにちは { name.lastName + name.firstName} さん　{ count + 1 } 回目の訪問です
         </h1>
       <p id="hello">
-        Helloコンポーネントが書き出されました！
+      {/*
+        Helloコンポーネントが書き出されました！*/}
       </p>
 
       <div style={{'margin-top': '100px', 'padding': '50px'}}>
